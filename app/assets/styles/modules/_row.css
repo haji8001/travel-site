@@ -5,13 +5,20 @@
 
 
 &--negative-gutter{
-	padding-right: -130px;
+	padding-right: -65px;
 }
 
 	&--gutters > div{
 		padding-right: 0;
 		@mixin atMedium{
-			padding-right: 65px;
+		padding-right: 65px;
+		}
+
+	}
+	&--gutters-large > div{
+		padding-right: 0;
+		@mixin atMedium{
+		padding-right: 100px;
 		}
 
 	}
@@ -27,6 +34,11 @@
 		}
 		&__medium-4-larger{
 			width:37%;		
+		}
+
+		&__medium-6{
+			float: left;
+			width: 50%;
 		}
 		&__b-margin-until-medium{
 			margin-bottom: 0;
