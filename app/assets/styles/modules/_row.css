@@ -1,13 +1,15 @@
 .row{
 
-
+	overflow: hidden;
 	@mixin atClearfix;
 
 
 &--negative-gutter{
-	padding-right: -65px;
+	margin-right: -65px;
 }
-
+&--gutters-small{
+	margin-right: -45px;
+				}
 	&--gutters > div{
 		padding-right: 0;
 		@mixin atMedium{
@@ -16,10 +18,16 @@
 
 	}
 	&--gutters-large > div{
-		padding-right: 0;
+		margin-right: -100;
 		@mixin atMedium{
 		padding-right: 100px;
 		}
+	}
+	&--t-padding{
+		padding-top: 80px;
+	}
+	&--gutters-small> div{
+		margin-right: 45px;
 
 	}
 &__b-margin-until-medium{
@@ -28,7 +36,7 @@
 	@mixin atMedium{
 
 		&__medium-4{
-		width: 33.34%;
+		width: 33.33%;
 		float:left;
 
 		}
@@ -52,6 +60,17 @@
 	&__medium-8-smaller{
 			width: 63%;
 		}		
+	}
+
+	/* flesbox */
+	&--equal-hieght-at-medium{
+		@mixin atMedium{
+			display: flex;
+		}
+		&>div{
+			float: none;
+			display: flex;
+		}
 	}
 
 
